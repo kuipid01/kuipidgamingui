@@ -1,0 +1,63 @@
+@import '../../style//variable.scss';
+
+.featuredProduct{
+  width: 15%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @media (max-width:768px) {
+     
+    width: 48%;
+    height: 300px;
+    border: solid 1px $lightPrimary;
+    margin-bottom: 1rem;
+}
+  img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+  }
+  .name{
+    font-size: 18px;
+    margin-bottom: 2px;
+
+  }
+  .make{
+    font-size: 13px;
+    color: #5a5555;
+    margin-bottom: 15px;
+
+  }
+  .price{
+    color:$secondaryColor;
+    font-size: 25px;
+  }
+  .browse{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+    @media (max-width:788px) {
+      height: fit-content;
+     
+     }
+    div{
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: solid 1px $secondaryColor;
+  }
+  span{
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  }
+  }

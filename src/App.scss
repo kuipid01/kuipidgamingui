@@ -1,0 +1,24 @@
+@import './style/variable.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: $primaryColor;
+  min-height: 100vh;
+  width: 100%;
+  color: $whiteColor;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+h1{
+  color: $whiteColor;
+}
+.fcenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

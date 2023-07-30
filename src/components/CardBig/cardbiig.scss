@@ -1,0 +1,146 @@
+@import '../../style//variable.scss';
+
+.product.team {
+    height: 70vh;
+    position: relative;
+    @media (max-width:788px) {
+      display: flex;
+      flex-direction: column;
+      height: 50vh;       }
+    img.lay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: .1;
+        object-fit: cover;
+
+    }
+img.user{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
+    right: 0;
+    top: 0;
+    z-index:10;
+    @media (max-width:788px) {
+       width: 100%;
+position: relative;
+object-fit: cover;
+         }
+}
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .1;
+    }
+}
+
+.product {
+    width: 50%;
+    height: 50vh;
+    border: solid 1px $lightPrimary;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    @media (max-width:768px) {
+     
+        width: 100%;
+      
+    }
+    h1 {
+        position: absolute;
+        font-size: 200px;
+        font-weight: bold;
+        bottom: 5%;
+        z-index: 0;
+        color: $lightPrimary;
+        left: -2%;
+        opacity: .6;
+
+    }
+
+    img {
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        transform: scale(1.5);
+        top: -5%;
+
+        z-index: 10;
+        right: 5%;
+        object-fit: cover;
+        @media (max-width:1088px) {
+            transform: scale(.7);
+            right: -15%;
+        }
+    }
+
+    .itemcontainer {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 0 2rem 2rem;
+        @media (max-width:768px) {
+            padding: 1rem 0 1rem 1rem;
+        }
+        .priceCont {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                &:first-child {
+                    font-size: 15px;
+                    color: #837575;
+                    font-weight: bold;
+                }
+
+                &:last-child {
+                    font-size: 30px;
+                    color: $secondaryColor;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .nameContainer {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            
+            p {
+                font-size: 30px;
+                font-weight: 900;
+                width: 300px;
+            }
+
+            .browse {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                div {
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    border: solid 1px $secondaryColor;
+                }
+
+                span {
+                    text-transform: uppercase;
+                }
+
+            }
+        }
+
+
+    }
+}
