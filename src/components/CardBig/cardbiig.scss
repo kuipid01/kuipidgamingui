@@ -3,10 +3,11 @@
 .product.team {
     height: 70vh;
     position: relative;
-    @media (max-width:788px) {
+    @media (max-width:850px) {
       display: flex;
       flex-direction: column;
-      height: 50vh;       }
+      min-height: 50vh;
+      height: fit-content;       }
     img.lay {
         position: absolute;
         width: 100%;
@@ -23,7 +24,7 @@ img.user{
     right: 0;
     top: 0;
     z-index:10;
-    @media (max-width:788px) {
+    @media (max-width:850px) {
        width: 100%;
 position: relative;
 object-fit: cover;
